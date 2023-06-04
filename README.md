@@ -5,25 +5,30 @@ I am talking about git's command
 You are using git for the first time or have a new git installation. This command sets your identity with name and email address.
 ```
 git config –global user.name “Your name”
+
 ```
 ```
 git config –global user.email “Your email”
+
 ```
 
 ## git version
 Used to check the Git version
 ```
 git version
+
 ```
 
 ## How to init on git or gitlab
 is the first command you use to start a new project in Git. This command will create a new empty repository into which you can then store your source code.
 ```
 git init
+
 ```
 You can also include the name of the repository in the git init command
 ```
 git init <your repository name>
+
 ```
 ## git clone
 
@@ -31,6 +36,7 @@ The git clone command is used to copy an existing repository.
 You use git clone when you need a copy of an existing repository. The git clone command first uses the git init command, then it will check all its contents.
 ```
 git clone <your project URL>
+
 ```
 ## git add
 
@@ -39,16 +45,19 @@ The git add command adds all new code files or edited files to the repository. T
 The following command adds a specific file to the stage area.
 ```
 git add your_file_name
+
 ```
 The following command adds all edited and new files to the stage area.
 ```
  git add *
+
  ```
 
 ### Adding file when you want to push on github
 
 ```
 git add . 
+
 ```
 
 ### committing on git
@@ -56,6 +65,7 @@ git add .
 This is an essential command in Git. In fact, the git commit command will add the changes to the local repository.
 ```
 git commit -m "writing text"
+
 ```
 ### git status
 
@@ -63,6 +73,7 @@ git status is used to check the status of files and you can identify which files
 You can use it between the Git add and Git commits commands to see the status.
 ```
 git status
+
 ```
 
 ### How to pull or get code from git
