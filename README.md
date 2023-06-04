@@ -36,3 +36,11 @@ git pull origin
 ```
 git push origin
 ```
+
+### Adding just one file
+
+```
+git add name file
+```
+### 
+
