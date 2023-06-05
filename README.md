@@ -53,21 +53,21 @@ The following command adds all edited and new files to the stage area.
 
  ```
 
-### Adding file when you want to push on github
+## Adding file when you want to push on github
 
 ```
 git add . 
 
 ```
 
-### committing on git
+## committing on git
 
 This is an essential command in Git. In fact, the git commit command will add the changes to the local repository.
 ```
 git commit -m "writing text"
 
 ```
-### git status
+## git status
 
 git status is used to check the status of files and you can identify which files need attention. This command can be executed at any time.
 You can use it between the Git add and Git commits commands to see the status.
@@ -75,6 +75,26 @@ You can use it between the Git add and Git commits commands to see the status.
 git status
 
 ```
+## git branch
+
+You can manage branches effectively with the git branch command. There are various Git branch options and switches.
+
+
+1. List all branches
+```
+git branch
+```
+
+2. Create a new branch
+```
+git branch <branch_name>
+```
+3. Delete a branch
+
+```
+ git branch -d <branch_name>
+```
+
 
 ### How to pull or get code from git
 
@@ -93,4 +113,3 @@ git push origin
 ```
 git add name file
 ```
-
