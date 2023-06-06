@@ -117,14 +117,35 @@ This command acts like a border around the tank. If you need to communicate with
 
 ### How to pull or get code from git
 
+The git pull command downloads the content (not the metadata) and immediately updates the local repository with the latest content.
+
 ```
 git pull origin
 ```
+or
+```
+git pull <remote_url>
+```
 
 ### How to push on git
-
+After connecting to the remote repository (using the git remote command), it's time to push the changes to the repository
 ```
 git push origin
 ```
+or
+```
+git push -u <short_name> <your_branch_name>
+```
+
+The Git source and upstream must be set up before using the git push command.
+```
+git push –set-upstream <short_name> <branch_name>
+```
 
 ###  git fetch
+
+This command downloads all information about commits, references, etc. so you can review them before applying these changes to your local repository.
+
+```
+git fetch
+```
