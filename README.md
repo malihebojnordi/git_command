@@ -94,7 +94,26 @@ git branch <branch_name>
 ```
  git branch -d <branch_name>
 ```
+## git checkout
 
+This command is used to switch between branches. It is one of the most powerful git commands and can be used as a multipurpose tool.
+
+1. Go to another branch:
+```
+git checkout <branch_name>
+```
+2. You can create a new branch and switch to it:
+```
+git checkout -b <your_new_branch_name>
+```
+
+## git remote
+
+This command acts like a border around the tank. If you need to communicate with the world outside the repository, you should use the git remote command. This command connects the local repository to the remote one.
+
+```
+ git remote add <shortname> <url>
+```
 
 ### How to pull or get code from git
 
@@ -108,8 +127,4 @@ git pull origin
 git push origin
 ```
 
-### Adding just one file
-
-```
-git add name file
-```
+###  git fetch
