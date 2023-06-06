@@ -2,7 +2,7 @@
 I am talking about git's command
 
 ## git config
-You are using git for the first time or have a new git installation. This command sets your identity with name and email address.
+You are using git for the first time or have a new git installation. This command sets your identity with your name and email address.
 ```
 git config –global user.name “Your name”
 
@@ -149,3 +149,30 @@ This command downloads all information about commits, references, etc. so you ca
 ```
 git fetch
 ```
+### git stash
+
+This command saves edited files temporarily. stash means to save. In Git, everything that is not committed is saved.
+
+```
+git stash
+```
+
+The following command lists all stashes:
+
+```
+git stash list
+```
+It simply applies a stash to the branch:
+
+```
+ git stash apply
+ ```
+
+ ### git log
+
+ With the help of the git log command, you can see all the previous commits starting from the last commit.
+
+ ```
+ git log
+ ```
+ 
