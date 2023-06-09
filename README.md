@@ -208,3 +208,161 @@ This command can remove tracked files from index and working directory.
 ```
 git rm <your_file_name>
 ```
+
+
+### 20. git merge
+
+The git merge command helps to merge changes from two branches into a single branch.
+
+```
+git merge <branch_name>
+```
+### 21. git rebase
+
+Git Rebase is similar to the git merge command. Merges two branches into a single Branch with one exception. A git rebase command overwrites the commit history.
+
+If you have multiple private branches, you should use the git rebase command to merge them into one Branch. This creates a linear commit history.
+```
+git rebase <base>
+```
+
+### 22. git bisect
+
+The git bisect command helps to find bad commits.
+
+
+A. Start git bisect :
+
+```
+git bisect start
+```
+
+
+B. Notify git bisect about a good commit.
+
+```
+git bisect good a123
+```
+
+C. Notify git bisect about a bad commit.
+
+```
+git bisect bad z123
+```
+
+### 23. git cherry-pick
+
+Git cherry-pick is a good and powerful command that allows you to pick any commit from any branch and apply it to any other Branch.
+
+``` git cherry-pick <commit-hash>
+```
+
+### 24. git archive
+
+The git archive command combines multiple files into a single file. It's like a zip tool, meaning you can unzip files and access each file individually.
+
+```
+git archive –format zip HEAD > archive-HEAD.zip
+```
+
+
+### 25. git pull –rebase
+
+Most of the time, your should rebase (not merge) when using git pull.
+
+```
+git pull –rebase
+```
+
+### 26. git blame
+
+Use the git blame command to check the contents of each file line by line. This command helps to identify who made changes to a file.
+
+```
+git blame <your_file_name>
+```
+
+### 27. git tag
+
+Git tags are helpful & you can use them for release management. You can think of the Tag as an immutable branch. Its importance is much greater during public release. The Git Tag command is used to create a new tag.
+
+```
+git tag -a v1.0.0
+```
+
+
+### 28. git verify-commit
+
+The git verify-commit command checks the GPG signature of commits. GPG or "GNU Privacy Guard"
+
+```
+git verify-commit <commit>
+```
+
+
+### 29. git verify-tag
+
+You can verify the tag with this command.
+
+```
+git verify-tag <tag>
+```
+
+
+### 30. git diff
+
+Most of the time, you should compare two git files or branches before committing or pushing. The helpful command git diff is used for this.
+
+A. Comparing the working directory with the local repository:
+
+```
+git diff HEAD <filename>
+```
+
+
+B. Comparison of two branches:
+
+```
+git diff <source branch> <target branch>
+```
+
+### 31. git citool
+
+Git Citool is a graphical alternative to Git Commit.
+
+```
+git citool
+```
+
+### 32. git mv
+
+The Git mv command is used to rename a Git file. It has two arguments; Source and destination file names.
+
+```
+git mv <old-file-name> <new-file-name>
+```
+
+
+### 33. git clean
+
+You can work with untracked files using the git clean command. With this command, you can remove all untracked files from the working directory. To work with tracked files, you must use the git reset command.
+
+```
+git clean
+```
+
+### 34. git help
+
+You can use the git help command to get more information and help for each command.
+
+```
+git help <git_command>
+```
+
+### 35. git whatchanged
+
+The Git whatchanged command does the same thing as Git log but in raw format.
+
+```
+git whatchanged
+```
